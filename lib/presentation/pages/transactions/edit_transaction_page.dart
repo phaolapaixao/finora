@@ -60,7 +60,6 @@ class _EditTransactionPageState extends State<EditTransactionPage> {
                 .where((cat) => cat.type == typeString)
                 .toList();
 
-            // Set selected category if not already set
             if (_selectedCategory == null && filtered.isNotEmpty) {
               final currentCat = filtered.firstWhere(
                 (cat) => cat.id == widget.transaction.categoryId,
@@ -75,7 +74,6 @@ class _EditTransactionPageState extends State<EditTransactionPage> {
               });
             }
 
-            // Update category if type changed
             if (_selectedCategory != null &&
                 !filtered.any((c) => c.id == _selectedCategory?.id)) {
               WidgetsBinding.instance.addPostFrameCallback((_) {
