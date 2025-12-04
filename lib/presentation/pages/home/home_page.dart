@@ -55,7 +55,6 @@ class _HomePageState extends State<HomePage>
 
     switch (index) {
       case 0:
-        // Already on home
         break;
       case 1:
         Navigator.push(
