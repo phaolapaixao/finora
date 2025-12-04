@@ -82,15 +82,13 @@ class DatabaseHelper {
         ADD COLUMN type TEXT NOT NULL DEFAULT 'expense'
       ''');
 
-      // Atualizar categorias existentes com o tipo correto
-      // Categorias 1-11 são receitas
+    
       await db.execute('''
         UPDATE ${AppConstants.tabelaCategorias}
         SET type = 'income'
         WHERE id IN ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11')
       ''');
 
-      // Categorias 12-20 são despesas (já tem o valor padrão 'expense')
     }
   }
 
@@ -145,7 +143,7 @@ class DatabaseHelper {
       {
         'id': '6',
         'name': 'Gorjetas / Prêmios',
-        'icon_code_point': 0xef51, // stars
+        'icon_code_point': 0xef51, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF2F9E44,
         'order_index': 5,
@@ -154,7 +152,7 @@ class DatabaseHelper {
       {
         'id': '7',
         'name': 'Venda de bens',
-        'icon_code_point': 0xe8cc, // shopping_bag
+        'icon_code_point': 0xe8cc, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF2B8A3E,
         'order_index': 6,
@@ -163,7 +161,7 @@ class DatabaseHelper {
       {
         'id': '8',
         'name': 'Presentes em dinheiro',
-        'icon_code_point': 0xebd5, // redeem
+        'icon_code_point': 0xebd5, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF94D82D,
         'order_index': 7,
@@ -172,7 +170,7 @@ class DatabaseHelper {
       {
         'id': '9',
         'name': 'Herança',
-        'icon_code_point': 0xe88a, // home
+        'icon_code_point': 0xe88a, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF82C91E,
         'order_index': 8,
@@ -181,7 +179,7 @@ class DatabaseHelper {
       {
         'id': '10',
         'name': 'Reembolsos',
-        'icon_code_point': 0xe8d0, // receipt
+        'icon_code_point': 0xe8d0, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF74B816,
         'order_index': 9,
@@ -190,7 +188,7 @@ class DatabaseHelper {
       {
         'id': '11',
         'name': 'Prêmios (Loteria)',
-        'icon_code_point': 0xe8f5, // casino
+        'icon_code_point': 0xe8f5, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF66A80F,
         'order_index': 10,
@@ -200,7 +198,7 @@ class DatabaseHelper {
       {
         'id': '12',
         'name': 'Alimentação',
-        'icon_code_point': 0xe532, // restaurant
+        'icon_code_point': 0xe532, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFFFF6B6B,
         'order_index': 11,
@@ -209,7 +207,7 @@ class DatabaseHelper {
       {
         'id': '13',
         'name': 'Transporte',
-        'icon_code_point': 0xe55d, // directions_car
+        'icon_code_point': 0xe55d,
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF4ECDC4,
         'order_index': 12,
@@ -218,7 +216,7 @@ class DatabaseHelper {
       {
         'id': '14',
         'name': 'Moradia',
-        'icon_code_point': 0xe88a, // home
+        'icon_code_point': 0xe88a, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFFFFE66D,
         'order_index': 13,
@@ -227,7 +225,7 @@ class DatabaseHelper {
       {
         'id': '15',
         'name': 'Saúde',
-        'icon_code_point': 0xe3f3, // local_hospital
+        'icon_code_point': 0xe3f3,
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF95E1D3,
         'order_index': 14,
@@ -236,7 +234,7 @@ class DatabaseHelper {
       {
         'id': '16',
         'name': 'Educação',
-        'icon_code_point': 0xe80c, // school
+        'icon_code_point': 0xe80c, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFFF38181,
         'order_index': 15,
@@ -245,7 +243,7 @@ class DatabaseHelper {
       {
         'id': '17',
         'name': 'Lazer',
-        'icon_code_point': 0xe30e, // sports_esports
+        'icon_code_point': 0xe30e, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFFAA96DA,
         'order_index': 16,
@@ -254,7 +252,7 @@ class DatabaseHelper {
       {
         'id': '18',
         'name': 'Compras',
-        'icon_code_point': 0xe8cc, // shopping_cart
+        'icon_code_point': 0xe8cc,
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFFFCBF49,
         'order_index': 17,
@@ -263,7 +261,7 @@ class DatabaseHelper {
       {
         'id': '19',
         'name': 'Investimentos',
-        'icon_code_point': 0xe8e5, // trending_up
+        'icon_code_point': 0xe8e5,
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF6A4C93,
         'order_index': 18,
@@ -272,7 +270,7 @@ class DatabaseHelper {
       {
         'id': '20',
         'name': 'Outros',
-        'icon_code_point': 0xe8f9, // more_horiz
+        'icon_code_point': 0xe8f9, 
         'icon_font_family': 'MaterialIcons',
         'color_value': 0xFF3A86FF,
         'order_index': 19,
