@@ -164,7 +164,6 @@ class _ReportsPageState extends State<ReportsPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Month selector
           Center(
             child: Text(
               DateFormatter.formatMonthYear(_selectedMonth),
@@ -293,8 +292,6 @@ class _ReportsPageState extends State<ReportsPage> {
             ),
           ),
           const SizedBox(height: 16),
-
-          // Summary cards
           Row(
             children: [
               Expanded(
@@ -318,7 +315,6 @@ class _ReportsPageState extends State<ReportsPage> {
           ),
           const SizedBox(height: 24),
 
-          // Charts area
           if (expensesByCategory.isNotEmpty) ...[
             Text(
               'Despesas por Categoria',
@@ -328,7 +324,6 @@ class _ReportsPageState extends State<ReportsPage> {
             ),
             const SizedBox(height: 16),
 
-            // Build selected chart
             Builder(
               builder: (context) {
                 final entries = expensesByCategory.entries.toList();
@@ -395,7 +390,6 @@ class _ReportsPageState extends State<ReportsPage> {
                     );
 
                   case ChartType.line:
-                    // Expenses per day
                     final daysInMonth = DateTime(
                       _selectedMonth.year,
                       _selectedMonth.month + 1,
@@ -519,8 +513,6 @@ class _ReportsPageState extends State<ReportsPage> {
             ),
 
             const SizedBox(height: 24),
-
-            // Category list
             ...expensesByCategory.entries.map((entry) {
               final category = categoryMap[entry.key];
               final percentage = (entry.value / state.totalExpense) * 100;
