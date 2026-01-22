@@ -1,6 +1,9 @@
 # 💰 Finora - Gerenciador Financeiro Moderno
 
-Um aplicativo Flutter completo de gerenciamento financeiro pessoal com **arquitetura limpa**, **BLoC** e **design moderno**.
+Um aplicativo Flutter completo de gerenciamento financeiro pessoal com **arquitetura limpa**, **BLoC** e **design moderno**0.
+
+# Link do Vídeo
+https://youtu.be/YTtOB8u3fO0
 
 ## ✨ Características
 
