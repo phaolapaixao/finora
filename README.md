@@ -5,6 +5,9 @@ Um aplicativo Flutter completo de gerenciamento financeiro pessoal com **arquite
 # Link do Vídeo
 https://youtu.be/YTtOB8u3fO0
 
+# Publicação no Linkedln
+https://www.linkedin.com/feed/update/urn:li:activity:7420102597493100544/?originTrackingId=X5eFWYH3dsOFfkQiSkuGNQ%3D%3D
+
 ## ✨ Características
 
 ### 🎨 Interface do Usuário
